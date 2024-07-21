@@ -1,0 +1,369 @@
+
+/* =====================Navbar CSS starts from here============================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --main-color: #6200f3;
+}
+
+* {
+	margin: 0px; 
+	padding: 0px; 
+	box-sizing: border-box;
+  list-style: none;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+}
+
+body, html {
+	height: 100vh;
+	font-family: Poppins-Regular, sans-serif;
+}
+
+body a
+{
+  text-decoration: none;
+  color: #000;
+}
+
+header
+{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 28px 12%;
+  transition: all .50s ease;
+}
+
+.logo
+{
+  display: flex;
+  align-items: center;
+}
+
+.logo img
+{
+  width: 40px;
+  margin-right: 3px;
+  transition: all .50 ease;
+}
+
+.logo span
+{
+  color: #000;
+  font-size: 1.5rem;
+  font-weight: bold;
+  transition: all .50 ease;
+}
+
+.navbarr
+{
+  display: flex;
+  margin-top: 15px;
+}
+
+.navbarr a
+{
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 5px 0;
+  margin: 0px 30px;
+  transition: all .50s ease;
+}
+
+.navbarr a:hover
+{
+  color: var(--main-color);
+}
+
+.navbarr a.active
+{
+  color: var(--main-color);
+}
+
+.mainn
+{
+  display: flex;
+  align-items: center;
+}
+
+.mainn a
+{
+  margin-right: 25px;
+  margin-left: 10px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: all .50s ease;
+}
+
+.mainn a:hover
+{
+  color: var(--main-color);
+}
+
+#menu-icon
+{
+  font-size: 35px;
+  color: #000;
+  cursor: pointer;
+  z-index: 10001;
+  display: none;
+}
+
+@media only screen and (max-width: 1350px) {
+  
+  /* MOBILE MENU */
+    
+  header
+  {
+    padding: 14px 2%;
+    transition: .2s;
+  }
+
+  .navbarr a
+  {
+    padding: 5px 0;
+    margin: 0px 20px;
+  }
+
+}
+
+@media only screen and (max-width: 1090px) {
+  
+  /* MOBILE MENU */
+    
+  #menu-icon
+  {
+    display: block;
+  }
+
+  .navbarr
+  {
+    position: absolute;
+    top: 60%;
+    right: -100%;
+    width: 270px;
+    height: 29vh;
+    background-color: var(--main-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    transition: all .50s ease;
+  }
+  
+  .navbarr a
+  {
+    display: block;
+    margin: 12px 0;
+    padding: 0 25px;
+    color: #fff;
+    transition: all .50 ease;
+  }
+
+  .navbarr a:hover
+  {
+    color: wheat;
+    transform: translateX(7px);
+  }
+
+  .navbarr a.active
+  {
+    color: wheat;
+  }
+
+  .navbarr.open
+  {
+    right: 2%;
+  }
+
+  .logo img
+  {
+    margin-left: 10px;
+    width: 30px;
+    transition: all .50s ease;
+  }
+
+  .logo span
+  {
+    font-size: 1.1rem;
+    transition: all .50s ease;
+  }
+
+  .mainn a
+  {
+    margin-right: 15px;
+    margin-left: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all .50s ease;
+  }
+}
+/* section 2 CSS */
+.line{
+    width: 20%;
+    text-align: center;
+    height: 1px;
+    background-color: #000;
+}
+/* ===================Footer CSS========================= */
+
+
+  /* STYLES SPECIFIC TO FOOTER  */
+  /* .footer {
+    width: 100%;
+    position: relative;
+    height: auto;
+
+  } */
+  /* .footer .col {
+    width: 190px;
+    height: auto;
+    float: left;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 0px 20px 20px 20px;
+  } */
+  .footer .col h1 {
+    margin: 0;
+    padding: 0;
+    font-family: inherit;
+    font-size: 12px;
+    line-height: 17px;
+    padding: 20px 0px 5px 0px;
+    color: rgba(255,255,255,0.2);
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.250em;
+  }
+  .footer  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  .footer .col-lg-4 ul li a{
+    color: #999999;
+    font-size: 15px;
+    font-family: inherit;
+    font-weight: bold;
+    padding: 5px 0px 5px 0px;
+    cursor: pointer;
+    transition: .2s;
+    -webkit-transition: .2s;
+    -moz-transition: .2s;
+  }
+  .social ul li {
+    display: inline-block;
+    padding-right: 5px !important;
+  }
+  
+  .footer .col ul li:hover {
+    color: #ffffff;
+    transition: .1s;
+    -webkit-transition: .1s;
+    -moz-transition: .1s;
+  }
+  .clearfix {
+    clear: both;
+  }
+  @media only screen and (min-width: 1280px) {
+    .contain {
+      width: 1200px;
+      margin: 0 auto;
+    }
+  }
+  @media only screen and (max-width: 1139px) {
+    .contain .social {
+      width: 1000px;
+      display: block;
+    }
+    .social h1 {
+      margin: 0px;
+    }
+  }
+  @media only screen and (max-width: 950px) {
+    .footer .col {
+      width: 33%;
+    }
+    .footer .col h1 {
+      font-size: 14px;
+    }
+    .footer .col ul li {
+      font-size: 13px;
+    }
+  }
+  @media only screen and (max-width: 500px) {
+      .footer .col {
+        width: 50%;
+      }
+      .footer .col h1 {
+        font-size: 14px;
+      }
+      .footer .col ul li {
+        font-size: 13px;
+      }
+  }
+  @media only screen and (max-width: 340px) {
+    .footer .col {
+      width: 100%;
+    }
+  }
+  /* =================news and events section CSS =========================*/
+
+.text-overflow-clamp {
+    width: 100%;
+    /* this code clamps based on specified lines */
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    display: -webkit-box;
+}
+
+  /* ==================testimonial section====================== */
+  .testimonial-card {
+    .testimonial-text{
+        width: 75%;
+        margin: auto;
+    }
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    margin: 20px 0;
+  
+  
+}
+
+/* ================Counter CSS =================*/
+
+.counter-section i { display:block; margin:0 0 10px}
+.counter-section span.counter { font-size:40px; color:#000; line-height:60px; display:block; font-family: "Oswald",sans-serif; letter-spacing: 2px}
+.counter-title{ font-size:12px; letter-spacing:2px; text-transform: uppercase}
+.counter-icon {top:25px; position:relative}
+.counter-style2 .counter-title {letter-spacing: 0.55px; float: left;}
+.counter-style2 span.counter {letter-spacing: 0.55px; float: left; margin-right: 10px;}
+.counter-style2 i {float: right; line-height: 26px; margin: 0 10px 0 0}
+.counter-subheadline span {float: right;}  
+
+.medium-icon {
+    font-size: 40px !important;
+    margin-bottom: 15px !important;
+} 
+
+/* .container{
+    margin-top:200px;
+} */
+
+
+  /* Footer css end here */
