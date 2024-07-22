@@ -384,6 +384,12 @@ ul.breadcrumb-ribbon {
   
   
 }
+/* award section */
+.award-about-img{
+  width: 136px;
+  height: 136px;
+  object-fit: cover;
+}
 
 /* ================Counter CSS =================*/
 
