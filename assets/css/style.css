@@ -54,7 +54,8 @@ header
 
 .logo img
 {
-  width: 40px;
+  width: 300px;
+  /* width: 40px; */
   margin-right: 3px;
   transition: all .50 ease;
 }
