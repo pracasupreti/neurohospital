@@ -16,5 +16,5 @@
 13. Terms of Service >      /terms
 14. Hospital Blogs >        /blogs/index
 15. Hospital Calendar >      /calendar
-16. Doctors >               /doctor
+16. Doctors >               /doctor .
 17. Doctor individual page
