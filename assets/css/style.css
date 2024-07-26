@@ -398,6 +398,10 @@ ul.breadcrumb-ribbon {
   border-radius: 1rem;
   /* background-color: #cecba3; */
 }
+.testi-img{
+  width: 4rem;
+  height: 4rem;
+}
 /* award section */
 .award-about-img{
   width: 136px;
