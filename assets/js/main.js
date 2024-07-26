@@ -7,4 +7,17 @@ menu.onclick = () =>
   menu.classList.toggle('bi-x');
   navbar.classList.toggle('open');
 }
-// JS For Swiper
+
+// <!-- ==================
+// js for faq
+// ===================== -->
+
+$('#accordion').on('show.bs.collapse', function (e) {
+$(e.target).prev('.card-header').find('.open-icon').hide();
+$(e.target).prev('.card-header').find('.close-icon').show();
+});
+$('#accordion').on('hide.bs.collapse', function (e) {
+$(e.target).prev('.card-header').find('.open-icon').show();
+$(e.target).prev('.card-header').find('.close-icon').hide();
+});
+

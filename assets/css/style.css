@@ -255,6 +255,14 @@ ul.breadcrumb-ribbon {
     color: #01447e;
     text-decoration: underline;
   }
+   /* faq section css */
+ .card-header .btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  text-align: left;
+}
 /* ===================Footer CSS========================= */
 
 
