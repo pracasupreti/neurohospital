@@ -155,7 +155,7 @@ header
     top: 60%;
     right: -100%;
     width: 270px;
-    height: 29vh;
+    /* height: 29vh; */
     background-color: var(--main-color);
     display: flex;
     flex-direction: column;
@@ -194,7 +194,7 @@ header
   .logo img
   {
     margin-left: 10px;
-    width: 30px;
+    /* width: 30px; */
     transition: all .50s ease;
   }
 
@@ -254,6 +254,14 @@ ul.breadcrumb-ribbon {
   ul.breadcrumb-ribbon li a:hover {
     color: #01447e;
     text-decoration: underline;
+  }
+  /* carousel section */
+  .carousel-item img{
+    width: 100%!important;
+    height: 800px!important;
+    object-fit: cover!important;
+    align-items: center!important;
+    vertical-align: middle!important;
   }
    /* faq section css */
  .card-header .btn {
