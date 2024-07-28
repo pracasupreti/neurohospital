@@ -1,9 +1,10 @@
 /* body */
-.heading{
-    color: #999999;
-    margin-bottom: 10px;
-    margin-top: 10px;
+.heading {
+  color: #999999;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
+
 /* =====================Navbar CSS starts from here============================== */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
@@ -13,27 +14,26 @@
 }
 
 * {
-	margin: 0px; 
-	padding: 0px; 
-	box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
   list-style: none;
   font-family: "Poppins", sans-serif;
   text-decoration: none;
 }
 
-body, html {
-	height: 100vh;
-	font-family: Poppins-Regular, sans-serif;
+body,
+html {
+  height: 100vh;
+  font-family: Poppins-Regular, sans-serif;
 }
 
-body a
-{
+body a {
   text-decoration: none;
   color: #000;
 }
 
-header
-{
+header {
   position: fixed;
   width: 100%;
   top: 0;
@@ -47,36 +47,31 @@ header
   transition: all .50s ease;
 }
 
-.logo
-{
+.logo {
   display: flex;
   align-items: center;
 }
 
-.logo img
-{
+.logo img {
   width: 300px;
   /* width: 40px; */
   margin-right: 3px;
   transition: all .50 ease;
 }
 
-.logo span
-{
+.logo span {
   color: #000;
   font-size: 1.5rem;
   font-weight: bold;
   transition: all .50 ease;
 }
 
-.navbarr
-{
+.navbarr {
   display: flex;
   margin-top: 15px;
 }
 
-.navbarr a
-{
+.navbarr a {
   font-size: 1.1rem;
   font-weight: 500;
   padding: 5px 0;
@@ -85,24 +80,20 @@ header
   transition: all .50s ease;
 }
 
-.navbarr a:hover
-{
+.navbarr a:hover {
   color: var(--main-color);
 }
 
-.navbarr a.active
-{
+.navbarr a.active {
   color: var(--main-color);
 }
 
-.mainn
-{
+.mainn {
   display: flex;
   align-items: center;
 }
 
-.mainn a
-{
+.mainn a {
   margin-right: 25px;
   margin-left: 10px;
   font-size: 1.1rem;
@@ -110,13 +101,11 @@ header
   transition: all .50s ease;
 }
 
-.mainn a:hover
-{
+.mainn a:hover {
   color: var(--main-color);
 }
 
-#menu-icon
-{
+#menu-icon {
   font-size: 35px;
   color: #000;
   cursor: pointer;
@@ -125,17 +114,15 @@ header
 }
 
 @media only screen and (max-width: 1350px) {
-  
+
   /* MOBILE MENU */
-    
-  header
-  {
+
+  header {
     padding: 14px 2%;
     transition: .2s;
   }
 
-  .navbarr a
-  {
+  .navbarr a {
     padding: 5px 0;
     margin: 0px 20px;
   }
@@ -143,16 +130,14 @@ header
 }
 
 @media only screen and (max-width: 1090px) {
-  
+
   /* MOBILE MENU */
-    
-  #menu-icon
-  {
+
+  #menu-icon {
     display: block;
   }
 
-  .navbarr
-  {
+  .navbarr {
     position: absolute;
     top: 60%;
     right: -100%;
@@ -167,9 +152,8 @@ header
     padding-bottom: 20px;
     transition: all .50s ease;
   }
-  
-  .navbarr a
-  {
+
+  .navbarr a {
     display: block;
     margin: 12px 0;
     padding: 0 25px;
@@ -177,37 +161,31 @@ header
     transition: all .50 ease;
   }
 
-  .navbarr a:hover
-  {
+  .navbarr a:hover {
     color: wheat;
     transform: translateX(7px);
   }
 
-  .navbarr a.active
-  {
+  .navbarr a.active {
     color: wheat;
   }
 
-  .navbarr.open
-  {
+  .navbarr.open {
     right: 2%;
   }
 
-  .logo img
-  {
+  .logo img {
     margin-left: 10px;
     /* width: 30px; */
     transition: all .50s ease;
   }
 
-  .logo span
-  {
+  .logo span {
     font-size: 1.1rem;
     transition: all .50s ease;
   }
 
-  .mainn a
-  {
+  .mainn a {
     margin-right: 15px;
     margin-left: 5px;
     font-size: 1rem;
@@ -215,75 +193,79 @@ header
     transition: all .50s ease;
   }
 }
+
 /* section 2 CSS */
-.line{
-    width: 20%;
-    text-align: center;
-    height: 1px;
-    background-color: #000;
+.line {
+  width: 20%;
+  text-align: center;
+  height: 1px;
+  background-color: #000;
 }
 
 /* ======Breadcrumb CSS============ */
 /* Style the list */
 ul.breadcrumb-ribbon {
-    padding: 30px 16px;
-    list-style: none;
-    height: auto;
-    /* background-color: #eee; */
-    
-  }
-  
-  /* Display list items side by side */
-  ul.breadcrumb-ribbon li {
-    display: inline;
-    font-size: 18px;
-  }
-  
-  /* Add a slash symbol (/) before/behind each list item */
-  ul.breadcrumb-ribbon li+li:before {
-    padding: 8px;
-    color: black;
-    content: "/\00a0";
-  }
-  
-  /* Add a color to all links inside the list */
-  ul.breadcrumb-ribbon li a {
-    color: #0275d8;
-    text-decoration: none;
-  }
-  
-  /* Add a color on mouse-over */
-  ul.breadcrumb-ribbon li a:hover {
-    color: #01447e;
-    text-decoration: underline;
-  }
-  /* carousel section */
-  .carousel-item img{
-    width: 100%!important;
-    height: 800px!important;
-    object-fit: cover!important;
-    align-items: center!important;
-    vertical-align: middle!important;
-  }
-   /* faq section css */
- .card-header .btn {
+  padding: 30px 16px;
+  list-style: none;
+  height: auto;
+  /* background-color: #eee; */
+
+}
+
+/* Display list items side by side */
+ul.breadcrumb-ribbon li {
+  display: inline;
+  font-size: 18px;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb-ribbon li+li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb-ribbon li a {
+  color: #0275d8;
+  text-decoration: none;
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumb-ribbon li a:hover {
+  color: #01447e;
+  text-decoration: underline;
+}
+
+/* carousel section */
+.carousel-item img {
+  width: 100% !important;
+  height: 800px !important;
+  object-fit: cover !important;
+  align-items: center !important;
+  vertical-align: middle !important;
+}
+
+/* faq section css */
+.card-header .btn {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   text-align: left;
 }
+
 /* ===================Footer CSS========================= */
 
 
-  /* STYLES SPECIFIC TO FOOTER  */
-  /* .footer {
+/* STYLES SPECIFIC TO FOOTER  */
+/* .footer {
     width: 100%;
     position: relative;
     height: auto;
 
   } */
-  /* .footer .col {
+/* .footer .col {
     width: 190px;
     height: auto;
     float: left;
@@ -292,158 +274,220 @@ ul.breadcrumb-ribbon {
     -moz-box-sizing: border-box;
     padding: 0px 20px 20px 20px;
   } */
+.footer .col h1 {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  font-size: 12px;
+  line-height: 17px;
+  padding: 20px 0px 5px 0px;
+  color: rgba(255, 255, 255, 0.2);
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.250em;
+}
+
+.footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer .col-lg-4 ul li a {
+  color: #999999;
+  font-size: 15px;
+  font-family: inherit;
+  font-weight: bold;
+  padding: 5px 0px 5px 0px;
+  cursor: pointer;
+  transition: .2s;
+  -webkit-transition: .2s;
+  -moz-transition: .2s;
+}
+
+.social ul li {
+  display: inline-block;
+  padding-right: 5px !important;
+}
+
+.footer .col ul li:hover {
+  color: #ffffff;
+  transition: .1s;
+  -webkit-transition: .1s;
+  -moz-transition: .1s;
+}
+
+.clearfix {
+  clear: both;
+}
+
+@media only screen and (min-width: 1280px) {
+  .contain {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 1139px) {
+  .contain .social {
+    width: 1000px;
+    display: block;
+  }
+
+  .social h1 {
+    margin: 0px;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .footer .col {
+    width: 33%;
+  }
+
   .footer .col h1 {
-    margin: 0;
-    padding: 0;
-    font-family: inherit;
-    font-size: 12px;
-    line-height: 17px;
-    padding: 20px 0px 5px 0px;
-    color: rgba(255,255,255,0.2);
-    font-weight: normal;
-    text-transform: uppercase;
-    letter-spacing: 0.250em;
+    font-size: 14px;
   }
-  .footer  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+
+  .footer .col ul li {
+    font-size: 13px;
   }
-  .footer .col-lg-4 ul li a{
-    color: #999999;
-    font-size: 15px;
-    font-family: inherit;
-    font-weight: bold;
-    padding: 5px 0px 5px 0px;
-    cursor: pointer;
-    transition: .2s;
-    -webkit-transition: .2s;
-    -moz-transition: .2s;
+}
+
+@media only screen and (max-width: 500px) {
+  .footer .col {
+    width: 50%;
   }
-  .social ul li {
-    display: inline-block;
-    padding-right: 5px !important;
+
+  .footer .col h1 {
+    font-size: 14px;
   }
-  
-  .footer .col ul li:hover {
-    color: #ffffff;
-    transition: .1s;
-    -webkit-transition: .1s;
-    -moz-transition: .1s;
+
+  .footer .col ul li {
+    font-size: 13px;
   }
-  .clearfix {
-    clear: both;
+}
+
+@media only screen and (max-width: 340px) {
+  .footer .col {
+    width: 100%;
   }
-  @media only screen and (min-width: 1280px) {
-    .contain {
-      width: 1200px;
-      margin: 0 auto;
-    }
-  }
-  @media only screen and (max-width: 1139px) {
-    .contain .social {
-      width: 1000px;
-      display: block;
-    }
-    .social h1 {
-      margin: 0px;
-    }
-  }
-  @media only screen and (max-width: 950px) {
-    .footer .col {
-      width: 33%;
-    }
-    .footer .col h1 {
-      font-size: 14px;
-    }
-    .footer .col ul li {
-      font-size: 13px;
-    }
-  }
-  @media only screen and (max-width: 500px) {
-      .footer .col {
-        width: 50%;
-      }
-      .footer .col h1 {
-        font-size: 14px;
-      }
-      .footer .col ul li {
-        font-size: 13px;
-      }
-  }
-  @media only screen and (max-width: 340px) {
-    .footer .col {
-      width: 100%;
-    }
-  }
-  /* =================news and events section CSS =========================*/
+}
+
+/* =================news and events section CSS =========================*/
 
 .text-overflow-clamp {
-    width: 100%;
-    /* this code clamps based on specified lines */
-    overflow: hidden;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 3;
-    line-clamp: 3;
-    display: -webkit-box;
+  width: 100%;
+  /* this code clamps based on specified lines */
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  display: -webkit-box;
 }
 
-  /* ==================testimonial section====================== */
-  .testimonial-card {
-    .testimonial-text{
-        width: 75%;
-        margin: auto;
-    }
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    text-align: center;
-    margin: 20px 0;
-  
-  
+/* ==================testimonial section====================== */
+.testimonial-card {
+  .testimonial-text {
+    width: 75%;
+    margin: auto;
+  }
+
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  margin: 20px 0;
+
+
 }
-.testi-card{
-  padding: 50px!important;
+
+.testi-card {
+  padding: 50px !important;
   border-radius: 1rem;
   /* background-color: #cecba3; */
 }
-.testi-img{
+
+.testi-img {
   width: 4rem;
   height: 4rem;
 }
+
 /* award section */
-.award-about-img{
+.award-about-img {
   width: 136px;
   height: 136px;
   object-fit: cover;
 }
+
 /* Blogs section */
-.blog-img{
-  height: 11rem!important;
-  object-fit: cover!important;
+.blog-img {
+  height: 11rem !important;
+  object-fit: cover !important;
 }
 
 
 /* ================Counter CSS =================*/
+.counter-section i {
+  display: block;
+  margin: 0 0 10px
+}
 
-.counter-section i { display:block; margin:0 0 10px}
-.counter-section span.counter { font-size:40px; color:#000; line-height:60px; display:block; font-family: "Oswald",sans-serif; letter-spacing: 2px}
-.counter-title{ font-size:12px; letter-spacing:2px; text-transform: uppercase}
-.counter-icon {top:25px; position:relative}
-.counter-style2 .counter-title {letter-spacing: 0.55px; float: left;}
-.counter-style2 span.counter {letter-spacing: 0.55px; float: left; margin-right: 10px;}
-.counter-style2 i {float: right; line-height: 26px; margin: 0 10px 0 0}
-.counter-subheadline span {float: right;}  
+.counter-section span.counter {
+  font-size: 40px;
+  color: #000;
+  line-height: 60px;
+  display: block;
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 2px
+}
+
+.counter-title {
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase
+}
+
+.counter-icon {
+  top: 25px;
+  position: relative
+}
+
+.counter-style2 .counter-title {
+  letter-spacing: 0.55px;
+  float: left;
+}
+
+.counter-style2 span.counter {
+  letter-spacing: 0.55px;
+  float: left;
+  margin-right: 10px;
+}
+
+.counter-style2 i {
+  float: right;
+  line-height: 26px;
+  margin: 0 10px 0 0
+}
+
+.counter-subheadline span {
+  float: right;
+}
 
 .medium-icon {
-    font-size: 40px !important;
-    margin-bottom: 15px !important;
-} 
+  font-size: 40px !important;
+  margin-bottom: 15px !important;
+}
+
+/* terms of services */
+.terms-container {
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
 
 /* .container{
     margin-top:200px;
 } */
 
 
-  /* Footer css end here */
+/* Footer css end here */
