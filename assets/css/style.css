@@ -417,6 +417,12 @@ ul.breadcrumb-ribbon {
   height: 136px;
   object-fit: cover;
 }
+/* Blogs section */
+.blog-img{
+  height: 11rem!important;
+  object-fit: cover!important;
+}
+
 
 /* ================Counter CSS =================*/
 
