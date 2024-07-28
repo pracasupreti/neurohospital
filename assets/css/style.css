@@ -82,6 +82,7 @@ header {
 
 .navbarr a:hover {
   color: var(--main-color);
+  text-decoration: none;
 }
 
 .navbarr a.active {
