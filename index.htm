@@ -47,9 +47,12 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!--  Swiper  -->
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   <!-- custom CSS -->
   <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  
 
 </head>
 
@@ -192,7 +195,7 @@
     <!-- News and events Starts here -->
     <section class="container-fluid  bg-light py-4">
       <div class="container">
-        <h3 class="text-center text-info">News And Events</h3>
+        <h3 class="text-center ">News And Events</h3>
         <div class="row">
           <div class="col-lg-4 col-md-6 col-sm-12 my-2">
             <div class="card h-100">
@@ -201,7 +204,7 @@
                 <div class="w-50">
 
                 </div>
-                <h5 class="card-title text-info">How and Why We Rank and Rate Hospitals</h5>
+                <h5 class="card-title ">How and Why We Rank and Rate Hospitals</h5>
                 <p class="card-text text-overflow-clamp" style="width: 97%;">The Best Hospitals rankings are broken into
                   two subcomponents – specialty rankings and procedure and condition ratings. Understanding which is
                   more relevant to you depends on the medical condition for which you’re seeking hospital quality
@@ -217,7 +220,7 @@
                 <div class="w-50">
 
                 </div>
-                <h5 class="card-title text-info">At least 12 major hospitals, health systems affected by global IT
+                <h5 class="card-title ">At least 12 major hospitals, health systems affected by global IT
                   outage</h5>
                 <p class="card-text text-overflow-clamp" style="width: 97%;">Hospitals and health systems across the
                   United States were among the industries affected by the global IT outage on Friday morning.
@@ -236,7 +239,7 @@
                 <div class="w-50">
 
                 </div>
-                <h5 class="card-title text-info">7th Annual Children’s National Hospital – NIAID Symposium</h5>
+                <h5 class="card-title ">7th Annual Children’s National Hospital – NIAID Symposium</h5>
                 <p class="card-text text-overflow-clamp" style="width: 97%;">In this 7th annual symposium, Children's
                   National and the National Institute of Allergy and Infectious Diseases (NIAID) partner to focus on
                   advancing the health of children with allergic, immunologic, and infectious diseases through
@@ -335,28 +338,32 @@
           </div>
           <a href="blog.htm" class="btn btn-primary rounded-pill">View All Blogs</a>
         </div>
-
+    
         <div class="row">
-          <div class="col-md-4 mb-4">
-            <div class="card h-100 border-0 shadow" style="border-radius: 3%;">
-              <img src="assets/images/home/blog/1.jpg" class="card-img-top rounded-top blog-img"
-                alt="Blog post image 2">
-              <div class="card-body mb-4">
-                <h5 class="card-title">Is Your Coffee Habit Supercharging Your Cells?</h5>
-                <p class="card-text"><small class="text-muted"><i class="bi bi-clock"></i> June 23, 2024</small></p>
-                <p class="card-text text-overflow-clamp">We all know that coffee can give us a much-needed energy boost
-                  in the morning. But did you know your daily cup of joe might also be doing wonders for your cells?
-                  Science is increasingly revealing the power of antioxidants, and guess what? Coffee is brimming with
-                  them!</p>
-                <a href="https://www.biratinfo.com/health/is-your-coffee-habit-supercharging-your-cells/"
-                  target="_blank"><button class="btn btn-primary ">Read More</button></a>
+         
+            <div class="col-md-4 mb-4">
+              <div data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine" class="h-100">
+              <div class="card h-100 border-0 shadow" style="border-radius: 3%;">
+                <img src="assets/images/home/blog/1.jpg" class="card-img-top rounded-top blog-img" alt="Blog post image 2">
+                <div class="card-body mb-4">
+                  <h5 class="card-title">Is Your Coffee Habit Supercharging Your Cells?</h5>
+                  <p class="card-text"><small class="text-muted"><i class="bi bi-clock"></i> June 23, 2024</small></p>
+                  <p class="card-text text-overflow-clamp">We all know that coffee can give us a much-needed energy boost
+                    in the morning. But did you know your daily cup of joe might also be doing wonders for your cells?
+                    Science is increasingly revealing the power of antioxidants, and guess what? Coffee is brimming with
+                    them!</p>
+                  <a href="https://www.biratinfo.com/health/is-your-coffee-habit-supercharging-your-cells/"
+                    target="_blank"><button class="btn btn-primary ">Read More</button></a>
+                </div>
               </div>
             </div>
-          </div>
+
+        </div>
+        
           <div class="col-md-4 mb-4">
+            <div data-aos="fade-down" data-aos-offset="100"  class="h-100">
             <div class="card h-100 border-3 shadow" style="border-radius: 3%;">
-              <img src="assets/images/home/blog/2.jpg" class="card-img-top rounded-top blog-img"
-                alt="Blog post image 1">
+              <img src="assets/images/home/blog/2.jpg" class="card-img-top rounded-top blog-img" alt="Blog post image 1">
               <div class="card-body mb-4">
                 <h5 class="card-title">Debunking Common Health Myths We All Believe</h5>
                 <p class="card-text"><small class="text-muted"><i class="bi bi-clock"></i> June 12, 2024</small></p>
@@ -370,11 +377,13 @@
               </div>
             </div>
           </div>
-
-          <div class="col-md-4 mb-4">
+        </div>
+       
+    
+          <div class="col-md-4 mb-4" >
+            <div data-aos="fade-left" data-aos-offset="100" class="h-100">
             <div class="card h-100 border-0 shadow" style="border-radius: 3%;">
-              <img src="assets/images/home/blog/3.jpg" class="card-img-top rounded-top blog-img"
-                alt="Blog post image 3">
+              <img src="assets/images/home/blog/3.jpg" class="card-img-top rounded-top blog-img" alt="Blog post image 3">
               <div class="card-body mb-4">
                 <h5 class="card-title">Causes of depression</h5>
                 <p class="card-text"><small class="text-muted"><i class="bi bi-clock"></i> May 2, 2024</small></p>
@@ -388,6 +397,9 @@
             </div>
           </div>
         </div>
+    
+    
+      </div>
       </div>
     </section>
 
@@ -439,8 +451,13 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
 
 
+
   <!-- custom js -->
   <script src="assets/js/main.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  
 </body>
 
 </html>
