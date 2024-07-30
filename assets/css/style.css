@@ -205,10 +205,10 @@ header {
 
 /* ============Why choose us section CSS============ */
 .line {
-  width: 30%;
+  width: 35%;
   text-align: center;
   height: 1px;
-  background-color: #000;
+  background-color: #d9d9d9;
 }
 .text-color{
   color: #2681a1;
