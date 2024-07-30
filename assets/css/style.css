@@ -50,7 +50,8 @@ header {
   align-items: center;
   justify-content: space-between;
   background-color: #fff;
-  padding: 28px 12%;
+  /* padding: 28px 12%; */
+  padding: 11px 12%;
   transition: all .50s ease;
 }
 
@@ -127,7 +128,8 @@ header {
   /* MOBILE MENU */
 
   header {
-    padding: 14px 2%;
+    /* padding: 14px 2%; */
+    padding: 11px 7%;
     transition: .2s;
   }
 
