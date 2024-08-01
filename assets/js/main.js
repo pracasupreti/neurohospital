@@ -1,3 +1,6 @@
+// initialize aos animation
+AOS.init();
+
 // JS for navbar
 let menu = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbarr');
@@ -20,4 +23,6 @@ $('#accordion').on('hide.bs.collapse', function (e) {
 $(e.target).prev('.card-header').find('.open-icon').show();
 $(e.target).prev('.card-header').find('.close-icon').hide();
 });
+
+
 
