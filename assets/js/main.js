@@ -1,5 +1,3 @@
-// initialize aos animation
-AOS.init();
 
 // JS for navbar
 let menu = document.querySelector('#menu-icon');
@@ -14,6 +12,9 @@ menu.onclick = () =>
 // <!-- ==================
 // js for faq
 // ===================== -->
+// initialize aos animation
+AOS.init();
+
 
 $('#accordion').on('show.bs.collapse', function (e) {
 $(e.target).prev('.card-header').find('.open-icon').hide();
@@ -23,6 +24,10 @@ $('#accordion').on('hide.bs.collapse', function (e) {
 $(e.target).prev('.card-header').find('.open-icon').show();
 $(e.target).prev('.card-header').find('.close-icon').hide();
 });
-
+// // header 
+// $(function() {
+//   $("#header").load("/contact.htm");
+//   $("#footer").load("/footer.htm");
+// });
 
 
